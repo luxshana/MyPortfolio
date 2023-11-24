@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Lux from '../../Componets/images/Lux.png';
+import Lux from '../../Componets/images/me.png';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -79,11 +79,13 @@ const About = () => {
             alt='john'
             width={780}
             height={800}
+            
             style={{
               maxWidth: '100%',
               height:'100%',
               opacity: isImageLoaded ? 1 : 0,
               transition: 'opacity 0.6s ease-in-out',
+              
             }}
             onLoad={handleImageLoad}
             initial={{
