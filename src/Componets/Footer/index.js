@@ -42,7 +42,7 @@ const ContactPage = () => {
         component="footer"
         sx={{
           backgroundColor: '#353434',
-          color: 'green',
+          color: 'white',
           py: 1,
           display: 'flex',
           justifyContent: 'space-between',
@@ -59,7 +59,7 @@ const ContactPage = () => {
             href='https://github.com/luxshana'
             target='_blank'
             rel='noopener noreferrer'
-            sx={{ mx: 1, color: 'green', fontSize: '1.5rem' }}
+            sx={{ mx: 1, color: 'white', fontSize: '1.5rem' }}
           >
             <GitHubIcon />
           </Box>
@@ -77,7 +77,7 @@ const ContactPage = () => {
             href='https://www.linkedin.com/in/luxshana-sivapatham-43637b217/'
             target='_blank'
             rel='noopener noreferrer'
-            sx={{ mx: 1, color: 'green', fontSize: '1.5rem' }}
+            sx={{ mx: 1, color: 'white', fontSize: '1.5rem' }}
           >
             <LinkedInIcon />
           </Box>

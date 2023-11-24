@@ -11,7 +11,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import DownloadIcon from '@mui/icons-material/Download';
 const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -68,7 +68,7 @@ const ContactPage = () => {
           <ListItemText primary="https://www.linkedin.com/in/luxshana-sivapatham-43637b217/" />
         </ListItemButton>
         <ListItemButton component="a">
-        <Button color="success"variant="contained"  onClick={openFacebookProfile} >Download cv</Button>
+        <Button color="success"variant="contained"  onClick={openFacebookProfile} endIcon={<DownloadIcon />} >Download cv</Button>
         </ListItemButton>
         </Box>
       </Grid>

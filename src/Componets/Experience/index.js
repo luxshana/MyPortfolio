@@ -7,7 +7,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import me from "../images/me.png";
 import Grid from '@mui/material/Grid';
 import CodeIcon from '@mui/icons-material/Code';
 
@@ -111,7 +110,7 @@ const Testimonials = () => {
           <Grid item xs={12} md={6}>
             <Typography><CodeIcon color='success' fontSize="large" /></Typography>
             <Typography variant='h2' fontWeight={300}>
-              Front-end developer at XdotO concepts
+              Software developer at XdotO concepts
             </Typography>
           </Grid>
         </Grid>

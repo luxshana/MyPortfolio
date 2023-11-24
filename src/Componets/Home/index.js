@@ -68,6 +68,7 @@ const About = () => {
             height={800}
             style={{
               maxWidth: '100%',
+              height:'100%',
               opacity: isImageLoaded ? 1 : 0,
               transition: 'opacity 0.6s ease-in-out',
             }}
