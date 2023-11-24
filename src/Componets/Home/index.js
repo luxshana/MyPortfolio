@@ -61,7 +61,22 @@ const About = () => {
     <AboutContainer className='about' id='/'>
       <Grid container spacing={2} justifyContent="center" alignItems="center">
         <Grid item xs={12} md={6}>
-          <motion.img
+        <div className='col-2' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3rem' }}>
+            <Typography variant="h3">
+              <TypingAnimation text="Hi, I'm Luxshana Sivapatham" speed={30} />
+            </Typography>
+            <Typography variant="h4">A Software Developer Based in Sri Lanka</Typography>
+            <span className='line'></span>
+            <Box p={3}>
+              <Button variant="contained" color="success" onClick={openFacebookProfile} >
+                Hire me
+              </Button>
+            </Box>
+          </div>
+          
+        </Grid>
+        <Grid item xs={12} md={6}>
+        <motion.img
             src={Lux}
             alt='john'
             width={780}
@@ -79,20 +94,6 @@ const About = () => {
             }}
             animate={controls}
           />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <div className='col-2' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3rem' }}>
-            <Typography variant="h3">
-              <TypingAnimation text="Hi, I'm Luxshana Sivapatham" speed={30} />
-            </Typography>
-            <Typography variant="h4">A Software Developer Based in Sri Lanka</Typography>
-            <span className='line'></span>
-            <Box p={3}>
-              <Button variant="contained" color="success" onClick={openFacebookProfile} >
-                Hire me
-              </Button>
-            </Box>
-          </div>
         </Grid>
       </Grid>
     </AboutContainer>
