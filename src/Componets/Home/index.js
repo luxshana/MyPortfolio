@@ -14,7 +14,6 @@ const AboutContainer = styled('div')(({ theme }) => ({
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   color: '#fff',
-
   position: 'relative'
 }));
 
@@ -61,7 +60,7 @@ const About = () => {
     <AboutContainer className='about' id='/'>
       <Grid container spacing={2} justifyContent="center" alignItems="center">
         <Grid item xs={12} md={6}>
-        <div className='col-2' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3rem' }}>
+          <div className='col-2' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '3rem' }}>
             <Typography variant="h3">
               <TypingAnimation text="Hi, I'm Luxshana Sivapatham" speed={30} />
             </Typography>
@@ -73,10 +72,9 @@ const About = () => {
               </Button>
             </Box>
           </div>
-          
         </Grid>
         <Grid item xs={12} md={6}>
-        <motion.img
+          <motion.img
             src={Lux}
             alt='john'
             width={780}
@@ -89,7 +87,7 @@ const About = () => {
             }}
             onLoad={handleImageLoad}
             initial={{
-              x: '-100%',
+              x: '100%',
               opacity: 0,
             }}
             animate={controls}
